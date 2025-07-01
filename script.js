@@ -2,7 +2,7 @@ let quotes = [];
 
 async function fetchQuotes() {
   try {
-    const res = await fetch("https://api.allorigins.win/raw?url=https://type.fit/api/quotes");
+    const res = await fetch("https://corsproxy.io/?https://type.fit/api/quotes");
     quotes = await res.json();
     generateQuote();
   } catch (error) {
